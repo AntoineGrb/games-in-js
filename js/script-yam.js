@@ -408,11 +408,11 @@ document.querySelector(".game__throw").addEventListener("click", function (e) {
     document.getElementById("audio_mix_throw").play(); //On lance le bruit
     //On affiche les images 1 seconde plus tard
     setTimeout(function(){
-        dice1ThrowedImg.src = "Images/Dice-val" + dice1Value + ".png"; dice1ThrowedImg.title = "Dé de " + dice1Value;
-        dice2ThrowedImg.src = "Images/Dice-val" + dice2Value + ".png"; dice2ThrowedImg.title = "Dé de " + dice1Value;
-        dice3ThrowedImg.src = "Images/Dice-val" + dice3Value + ".png"; dice3ThrowedImg.title = "Dé de " + dice1Value;
-        dice4ThrowedImg.src = "Images/Dice-val" + dice4Value + ".png"; dice4ThrowedImg.title = "Dé de " + dice1Value;
-        dice5ThrowedImg.src = "Images/Dice-val" + dice5Value + ".png"; dice5ThrowedImg.title = "Dé de " + dice1Value;
+        dice1ThrowedImg.src = "../images/Dice-val" + dice1Value + ".png"; dice1ThrowedImg.title = "Dé de " + dice1Value;
+        dice2ThrowedImg.src = "../images/Dice-val" + dice2Value + ".png"; dice2ThrowedImg.title = "Dé de " + dice1Value;
+        dice3ThrowedImg.src = "../images/Dice-val" + dice3Value + ".png"; dice3ThrowedImg.title = "Dé de " + dice1Value;
+        dice4ThrowedImg.src = "../images/Dice-val" + dice4Value + ".png"; dice4ThrowedImg.title = "Dé de " + dice1Value;
+        dice5ThrowedImg.src = "../images/Dice-val" + dice5Value + ".png"; dice5ThrowedImg.title = "Dé de " + dice1Value;
 
     },1500);
     
@@ -443,7 +443,7 @@ document.querySelector(".game__throw").addEventListener("click", function (e) {
         dicesSelectedValues[0] = dice1Value;  /*Contrôle*/ console.log("dicesSelectedValues : ", dicesSelectedValues);
 
         //Chargement de l'image du dé joué
-        dice1SelectedImg.src = "Images/Dice-val" + dice1Value + "-select.png"; dice1SelectedImg.title = "Dé n°1 sélect ";
+        dice1SelectedImg.src = "../images/Dice-val" + dice1Value + "-select.png"; dice1SelectedImg.title = "Dé n°1 sélect ";
         dice1SelectedImg.style.display = "flex";
         dice1ThrowedImg.style.display = "none";
 
@@ -460,7 +460,7 @@ document.querySelector(".game__throw").addEventListener("click", function (e) {
         dicesSelectedValues[1] = dice2Value;  /*Contrôle*/ console.log("dicesSelectedValues : ", dicesSelectedValues);
 
         //Chargement de l'image du dé joué
-        dice2SelectedImg.src = "Images/Dice-val" + dice2Value + "-select.png"; dice2SelectedImg.title = "Dé n°1 sélect ";
+        dice2SelectedImg.src = "../images/Dice-val" + dice2Value + "-select.png"; dice2SelectedImg.title = "Dé n°1 sélect ";
         dice2SelectedImg.style.display = "flex";
         dice2ThrowedImg.style.display = "none";
 
@@ -477,7 +477,7 @@ document.querySelector(".game__throw").addEventListener("click", function (e) {
         dicesSelectedValues[2] = dice3Value;  /*Contrôle*/ console.log("dicesSelectedValues : ", dicesSelectedValues);
 
         //Chargement de l'image du dé joué
-        dice3SelectedImg.src = "Images/Dice-val" + dice3Value + "-select.png"; dice3SelectedImg.title = "Dé n°3 sélect ";
+        dice3SelectedImg.src = "../images/Dice-val" + dice3Value + "-select.png"; dice3SelectedImg.title = "Dé n°3 sélect ";
         dice3SelectedImg.style.display = "flex";
         dice3ThrowedImg.style.display = "none";
 
@@ -494,7 +494,7 @@ document.querySelector(".game__throw").addEventListener("click", function (e) {
         dicesSelectedValues[3] = dice4Value;  /*Contrôle*/ console.log("dicesSelectedValues : ", dicesSelectedValues);
 
         //Chargement de l'image du dé joué
-        dice4SelectedImg.src = "Images/Dice-val" + dice4Value + "-select.png"; dice4SelectedImg.title = "Dé n°4 sélect ";
+        dice4SelectedImg.src = "../images/Dice-val" + dice4Value + "-select.png"; dice4SelectedImg.title = "Dé n°4 sélect ";
         dice4SelectedImg.style.display = "flex";
         dice4ThrowedImg.style.display = "none";
 
@@ -511,7 +511,7 @@ document.querySelector(".game__throw").addEventListener("click", function (e) {
         dicesSelectedValues[4] = dice5Value;  /*Contrôle*/ console.log("dicesSelectedValues : ", dicesSelectedValues);
 
         //Chargement de l'image du dé joué
-        dice5SelectedImg.src = "Images/Dice-val" + dice5Value + "-select.png"; dice5SelectedImg.title = "Dé n°5 sélect ";
+        dice5SelectedImg.src = "../images/Dice-val" + dice5Value + "-select.png"; dice5SelectedImg.title = "Dé n°5 sélect ";
         dice5SelectedImg.style.display = "flex";
         dice5ThrowedImg.style.display = "none";
 

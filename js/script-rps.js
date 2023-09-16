@@ -101,7 +101,7 @@ document.querySelector(".user__board__select__rock")
                 // Main de l'utilisateur
                 userHand = "rock";
                 console.log("User plays : " , userHand);
-                userChoice.src = "Images/rock_big.png"; // Chargement de l'image de la main jouée
+                userChoice.src = "../images/rock_big.png"; // Chargement de l'image de la main jouée
                 userChoice.title = "User plays rock !";
                 
                 // Main de l'IA
@@ -110,7 +110,7 @@ document.querySelector(".user__board__select__rock")
                         console.log("Mode Random");
                         random();
                         console.log("IA plays : " , iaHand);
-                        iaChoice.src = "Images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée random
+                        iaChoice.src = "../images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée random
                         iaChoice.title = "IA plays " + iaHand + " !";
                 }
 
@@ -124,7 +124,7 @@ document.querySelector(".user__board__select__rock")
                         console.log("userPlayedArray : " , userPlayedArray);
                         console.log("iaPlayedArray : " , iaPlayedArray);
 
-                        iaChoice.src = "Images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée par l'IA
+                        iaChoice.src = "../images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée par l'IA
                         iaChoice.title = "IA plays " + iaHand + " !";
                 }
                 
@@ -181,7 +181,7 @@ document.querySelector(".user__board__select__paper")
                 // Main de l'utilisateur
                 userHand = "paper";
                 console.log("User plays : " , userHand);
-                userChoice.src = "Images/paper_big.png";
+                userChoice.src = "../images/paper_big.png";
                 userChoice.title = "User plays paper !";
 
                 // Main de l'IA
@@ -190,7 +190,7 @@ document.querySelector(".user__board__select__paper")
                         console.log("Mode Random");
                         random();
                         console.log("IA plays : " , iaHand);
-                        iaChoice.src = "Images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée random
+                        iaChoice.src = "../images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée random
                         iaChoice.title = "IA plays " + iaHand + " !";
                 }
 
@@ -204,7 +204,7 @@ document.querySelector(".user__board__select__paper")
                         console.log("userPlayedArray : " , userPlayedArray);
                         console.log("iaPlayedArray : " , iaPlayedArray);
 
-                        iaChoice.src = "Images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée par l'IA
+                        iaChoice.src = "../images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée par l'IA
                         iaChoice.title = "IA plays " + iaHand + " !";
                 }
 
@@ -262,7 +262,7 @@ document.querySelector(".user__board__select__scissors")
                 console.log("User plays : " , userHand);
 
                 // Main de l'utilisateur
-                userChoice.src = "Images/scissors_big.png";
+                userChoice.src = "../images/scissors_big.png";
                 userChoice.title = "User plays scissors !";
 
                 // Main de l'IA
@@ -271,7 +271,7 @@ document.querySelector(".user__board__select__scissors")
                         console.log("Mode Random");
                         random();
                         console.log("IA plays : " , iaHand);
-                        iaChoice.src = "Images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée random
+                        iaChoice.src = "../images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée random
                         iaChoice.title = "IA plays " + iaHand + " !";
                 }
 
@@ -285,7 +285,7 @@ document.querySelector(".user__board__select__scissors")
                         console.log("userPlayedArray : " , userPlayedArray);
                         console.log("iaPlayedArray : " , iaPlayedArray);
 
-                        iaChoice.src = "Images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée par l'IA
+                        iaChoice.src = "../images/" + iaHand + "_big.png"; // Chargement de l'image de la main jouée par l'IA
                         iaChoice.title = "IA plays " + iaHand + " !";
                 }
 
