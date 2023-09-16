@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title> Yam </title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./js/script-yam.js"> </script>
+
+</head>
+<body>
+    <!-- Insertion des audios -->
+    <audio id="audio_throw" src="Audio/Lancer.mp3"> </audio>
+    <audio id="audio_mix_throw" src="Audio/Remuer-lancer.mp3"> </audio>
+    <audio id="audio_win" src="Audio/Victoire.mp3"> </audio>
+
+    <div class="container-yam">
+        <header class="header-yam">
+            <button onclick="window.location.href='./index.html'" class="home-return__button">
+                Retour page d'accueil
+            </button>
+        </header>
+        <main class="main-yam">
+            <!-------------- PLAYER 1 ---------------->
+            <div class="player1">
+                <div class="player1__title">
+                   <div class="player1__title__text"> <h1> Player 1 </h1>
+                    </div>
+                </div>
+                <div class="player1__score">
+                    <div class="player1__score__title">
+                        <h2> Score </h2>
+                    </div>
+        
+                    <!-- Tableau des scores Player 1-->
+                    <div class="player1__score__board">
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__hand"> <p class="text"> Hand </p></div>
+                            <div class="player1__score__board__line__score"> <p class="text"> Score </p></div>
+                            <div class="player1__score__board__line__selection"> <p class="text"> Select </p> </div>
+                            <div class="player1__score__board__line__cross"> <p class="text"> Cross </p> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__1"> <p class="text"> 1 </p></div>
+                            <div class="player1__score__board__line__1value"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__1select"> <input type="checkbox" class="checkboxp1__select__1" name="checkboxp1__1__select"> </div>
+                            <div class="player1__score__board__line__1cross"> <input type="checkbox" class="checkboxp1__cross__1" name="checkboxp1__1__select"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__2"> <p class="text"> 2 </p></div>
+                            <div class="player1__score__board__line__2value"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__2select"> <input type="checkbox" class="checkboxp1__select__2" name="checkboxp1__2__select"> </div>
+                            <div class="player1__score__board__line__2cross"> <input type="checkbox" class="checkboxp1__cross__2" name="checkboxp1__2__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__3"> <p class="text"> 3 </p></div>
+                            <div class="player1__score__board__line__3value"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__3select"> <input type="checkbox" class="checkboxp1__select__3" name="checkboxp1__3__select"> </div>
+                            <div class="player1__score__board__line__3cross"> <input type="checkbox" class="checkboxp1__cross__3" name="checkboxp1__3__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__4"> <p class="text"> 4 </p></div>
+                            <div class="player1__score__board__line__4value"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__4select"> <input type="checkbox" class="checkboxp1__select__4" name="checkboxp1__4__select"> </div>
+                            <div class="player1__score__board__line__4cross"> <input type="checkbox" class="checkboxp1__cross__4" name="checkboxp1__4__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__5"> <p class="text"> 5 </p></div>
+                            <div class="player1__score__board__line__5value"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__5select"> <input type="checkbox" class="checkboxp1__select__5" name="checkboxp1__5__select"> </div>
+                            <div class="player1__score__board__line__5cross"> <input type="checkbox" class="checkboxp1__cross__5" name="checkboxp1__5__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__6"> <p class="text"> 6 </p></div>
+                            <div class="player1__score__board__line__6value"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__6select"> <input type="checkbox" class="checkboxp1__select__6" name="checkboxp1__6__select"> </div>
+                            <div class="player1__score__board__line__6cross"> <input type="checkbox" class="checkboxp1__cross__6" name="checkboxp1__6__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__brelan"> <p class="text"> Brelan </p></div>
+                            <div class="player1__score__board__line__brelanvalue"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__brelanselect"> <input type="checkbox" class="checkboxp1__select__brelan" name="checkboxp1__brelan__select"> </div>
+                            <div class="player1__score__board__line__brelancross"> <input type="checkbox" class="checkboxp1__cross__brelan" name="checkboxp1__brelan__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__smallsuite"> <p class="text"> Petite suite </p></div>
+                            <div class="player1__score__board__line__smallsuitevalue"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__smallsuiteselect"> <input type="checkbox" class="checkboxp1__select__smallsuite" name="checkboxp1__smallsuite__select"> </div>
+                            <div class="player1__score__board__line__smallsuitecross"> <input type="checkbox" class="checkboxp1__cross__smallsuite" name="checkboxp1__smallsuite__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__bigsuite"> <p class="text"> Grande suite </p></div>
+                            <div class="player1__score__board__line__bigsuitevalue"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__bigsuiteselect"> <input type="checkbox" class="checkboxp1__select__bigsuite" name="checkboxp1__bigsuite__select"> </div>
+                            <div class="player1__score__board__line__bigsuitecross"> <input type="checkbox" class="checkboxp1__cross__bigsuite" name="checkboxp1__bigsuite__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__full"> <p class="text"> Full </p></div>
+                            <div class="player1__score__board__line__fullvalue"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__fullselect"> <input type="checkbox" class="checkboxp1__select__full" name="checkboxp1__full__select"> </div>
+                            <div class="player1__score__board__line__fullcross"> <input type="checkbox" class="checkboxp1__cross__full" name="checkboxp1__full__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__carre"> <p class="text"> Carré </p></div>
+                            <div class="player1__score__board__line__carrevalue"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__carreselect"> <input type="checkbox" class="checkboxp1__select__carre" name="checkboxp1__carre__select"> </div>
+                            <div class="player1__score__board__line__carrecross"> <input type="checkbox" class="checkboxp1__cross__carre" name="checkboxp1__carre__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__yam"> <p class="text"> Yam </p></div>
+                            <div class="player1__score__board__line__yamvalue"> <p class="text">  </p></div>
+                            <div class="player1__score__board__line__yamselect"> <input type="checkbox" class="checkboxp1__select__yam" name="checkboxp1__yam__select"> </div>
+                            <div class="player1__score__board__line__yamcross"> <input type="checkbox" class="checkboxp1__cross__yam" name="checkboxp1__yam__cross"> </div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__bonus"> <p class="text"> <strong> Bonus </strong> </p></div>
+                            <div class="player1__score__board__line__bonusvalue"> <p class="text">  </p></div>
+                        </div>
+                        <div class="player1__score__board__line">
+                            <div class="player1__score__board__line__total"> <p class="text"> <strong> Total </strong> </p></div>
+                            <div class="player1__score__board__line__totalvalue"> <p class="text">  </p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------- GAME ZONE ----------------> <!--^Réduire la taille des dés !! -->
+            <div class="game">
+                <div class="game__end">
+                    <h3> </h3>
+                    <input class="game__end__button" type="button" value="Rematch ?" />
+                </div>
+                <div class="game__selection">
+                    <div class="game__selection__zone">
+                        <div class="game__selection__zone__title">
+                            <p class="text--black"> Sélection active : </p>
+                        </div>
+                        <div class="game__selection__zone__dices">
+                            <div class="game__selection__zone__dices__dice1"> <img src="" alt="Dé n°1" height="50px"/> </div>
+                            <div class="game__selection__zone__dices__dice2"> <img src="" alt="Dé n°1" height="50px"/> </div>
+                            <div class="game__selection__zone__dices__dice3"> <img src="" alt="Dé n°1" height="50px"/> </div>
+                            <div class="game__selection__zone__dices__dice4"> <img src="" alt="Dé n°1" height="50px"/> </div>
+                            <div class="game__selection__zone__dices__dice5"> <img src="" alt="Dé n°1" height="50px"/> </div>
+                            <!-- <img src="Images/Dice-val1-select.png" alt="Dé sélectionné n°1" height="50px"> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="game__throw">
+                    <input id="button__throw" type="button" value="Throw !" />
+                </div>
+                <div class="game__field">
+                    <div class="game__field__zone1">
+                        <div class="game__field__zone1__dice1"> <img src="" alt="" /> </div>
+                        <div class="game__field__zone1__dice2"> <img src="" alt=""/> </div>
+                        <div class="game__field__zone1__dice3"> <img src="" alt=""/> </div>
+                    </div>
+                    <div class="game__field__zone2">
+                        <div class="game__field__zone2__dice4"> <img src="" alt="" /> </div>
+                        <div class="game__field__zone2__dice5"> <img src="" alt="" /> </div>
+                    </div>
+                </div>
+        
+            </div>
+            <!-------------- PLAYER 2 ---------------->
+            <div class="player2">
+                <div class="player2__title">
+                   <div class="player2__title__text"> <h1> Player 2 </h1>
+                    </div>
+                </div>
+                <div class="player2__score">
+                    <div class="player2__score__title">
+                        <h2> Score </h2>
+                    </div>
+        
+                    <!-- Tableau des scores Player 2-->
+                    <div class="player2__score__board">
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__hand"> <p class="text"> Hand </p></div>
+                            <div class="player2__score__board__line__score"> <p class="text"> Score </p></div>
+                            <div class="player2__score__board__line__selection"> <p class="text"> Select </p> </div>
+                            <div class="player2__score__board__line__cross"> <p class="text"> Cross </p> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__1"> <p class="text"> 1 </p></div>
+                            <div class="player2__score__board__line__1value"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__1select"> <input type="checkbox" class="checkboxp2__select__1" name="checkboxp2__1__select"> </div>
+                            <div class="player2__score__board__line__1cross"> <input type="checkbox" class="checkboxp2__cross__1" name="checkboxp2__1__select"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__2"> <p class="text"> 2 </p></div>
+                            <div class="player2__score__board__line__2value"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__2select"> <input type="checkbox" class="checkboxp2__select__2" name="checkboxp2__2__select"> </div>
+                            <div class="player2__score__board__line__2cross"> <input type="checkbox" class="checkboxp2__cross__2" name="checkboxp2__2__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__3"> <p class="text"> 3 </p></div>
+                            <div class="player2__score__board__line__3value"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__3select"> <input type="checkbox" class="checkboxp2__select__3" name="checkboxp2__3__select"> </div>
+                            <div class="player2__score__board__line__3cross"> <input type="checkbox" class="checkboxp2__cross__3" name="checkboxp2__3__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__4"> <p class="text"> 4 </p></div>
+                            <div class="player2__score__board__line__4value"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__4select"> <input type="checkbox" class="checkboxp2__select__4" name="checkboxp2__4__select"> </div>
+                            <div class="player2__score__board__line__4cross"> <input type="checkbox" class="checkboxp2__cross__4" name="checkboxp2__4__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__5"> <p class="text"> 5 </p></div>
+                            <div class="player2__score__board__line__5value"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__5select"> <input type="checkbox" class="checkboxp2__select__5" name="checkboxp2__5__select"> </div>
+                            <div class="player2__score__board__line__5cross"> <input type="checkbox" class="checkboxp2__cross__5" name="checkboxp2__5__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__6"> <p class="text"> 6 </p></div>
+                            <div class="player2__score__board__line__6value"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__6select"> <input type="checkbox" class="checkboxp2__select__6" name="checkboxp2__6__select"> </div>
+                            <div class="player2__score__board__line__6cross"> <input type="checkbox" class="checkboxp2__cross__6" name="checkboxp2__6__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__brelan"> <p class="text"> Brelan </p></div>
+                            <div class="player2__score__board__line__brelanvalue"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__brelanselect"> <input type="checkbox" class="checkboxp2__select__brelan" name="checkboxp2__brelan__select"> </div>
+                            <div class="player2__score__board__line__brelancross"> <input type="checkbox" class="checkboxp2__cross__brelan" name="checkboxp2__brelan__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__smallsuite"> <p class="text"> Petite suite </p></div>
+                            <div class="player2__score__board__line__smallsuitevalue"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__smallsuiteselect"> <input type="checkbox" class="checkboxp2__select__smallsuite" name="checkboxp2__smallsuite__select"> </div>
+                            <div class="player2__score__board__line__smallsuitecross"> <input type="checkbox" class="checkboxp2__cross__smallsuite" name="checkboxp2__smallsuite__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__bigsuite"> <p class="text"p> Grande suite </p></div>
+                            <div class="player2__score__board__line__bigsuitevalue"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__bigsuiteselect"> <input type="checkbox" class="checkboxp2__select__bigsuite" name="checkboxp2__bigsuite__select"> </div>
+                            <div class="player2__score__board__line__bigsuitecross"> <input type="checkbox" class="checkboxp2__cross__bigsuite" name="checkboxp2__bigsuite__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__full"> <p class="text"> Full </p></div>
+                            <div class="player2__score__board__line__fullvalue"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__fullselect"> <input type="checkbox" class="checkboxp2__select__full" name="checkboxp2__full__select"> </div>
+                            <div class="player2__score__board__line__fullcross"> <input type="checkbox" class="checkboxp2__cross__full" name="checkboxp2__full__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__carre"> <p class="text"> Carré </p></div>
+                            <div class="player2__score__board__line__carrevalue"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__carreselect"> <input type="checkbox" class="checkboxp2__select__carre" name="checkboxp2__carre__select"> </div>
+                            <div class="player2__score__board__line__carrecross"> <input type="checkbox" class="checkboxp2__cross__carre" name="checkboxp2__carre__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__yam"> <p class="text"> Yam </p></div>
+                            <div class="player2__score__board__line__yamvalue"> <p class="text">  </p></div>
+                            <div class="player2__score__board__line__yamselect"> <input type="checkbox" class="checkboxp2__select__yam" name="checkboxp2__yam__select"> </div>
+                            <div class="player2__score__board__line__yamcross"> <input type="checkbox" class="checkboxp2__cross__yam" name="checkboxp2__yam__cross"> </div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__bonus"> <p class="text"> <strong> Bonus </strong> </p></div>
+                            <div class="player2__score__board__line__bonusvalue"> <p class="text">  </p></div>
+                        </div>
+                        <div class="player2__score__board__line">
+                            <div class="player2__score__board__line__total"> <p class="text"> <strong> Total </strong> </p></div>
+                            <div class="player2__score__board__line__totalvalue"> <p class="text">  </p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title> Pierre-papier-ciseaux </title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./js/script-rps.js"> </script>
+</head>
+<body>
+    <!-- Insertion des audios -->
+    <audio id="audio_hand" src="audio/Whoosh.mp3"> </audio>
+    <audio id="audio_win" src="audio/Victoire.mp3"> </audio>
+    <audio id="audio_lose" src="audio/Defaite.mp3"> </audio>
+
+    <div class="container-rps">
+        <header class="header-rps">
+            <div class="home-return">
+                <button onclick="window.location.href='./index.html'" class="home-return__button">
+                    Retour page d'accueil
+                </button>
+            </div>
+            <form method="get" action="">
+                <p>
+                    <label for="mode"> Sélectionner le mode de l'IA : </label> <br/>
+                    <select name="mode" id="mode">
+                        <option value="Random"> Random </option>
+                        <option value="Expert"> Expert </option>
+                    </select>
+                </p>
+            </form>
+            <div id="zone__test__user"> <p>  </p>
+            </div>
+            <div id="zone__test__IA"> <p>  </p>
+            </div>
+            <div id="zone__test__win"> <p>  </p>
+            </div>
+        </header>
+        <main class="main-rps">
+            <div class="user">
+                <div class="user__title">
+                    <div class="user__title__name"> <h1> User </h1> </div>
+                    <div class="user__title__score"> <h2> Score : <span class = "user__title__score__variable"> 0 </span> </h2> </div>
+                </div>
+                <div class="user__board">
+                    <div class="user__board__select">
+                       <div class="user__board__select__rock"> <a href="" title="Jouer ROCK"> <img src="images/Rock.png" alt="Rock" height="150px" /> </a>
+                       </div>
+                       <div class="user__board__select__paper"> <a href="" title="Jouer PAPER"> <img src="images/Paper.png" alt="Paper" height="150px" /> </a>
+                       </div>
+                       <div class="user__board__select__scissors"> <a href="" title="Jouer SCISSORS"> <img src="images/Scissors.png" alt="Scissors" height="150px" /> </a>
+                       </div>
+                    </div>
+                    <div class="user__board__play">
+                        <div class="user__board__play__img"> <img src="" title="" height="400px" width="auto"/> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="IA">
+                <div class="IA__title">
+                    <div class="IA__title__name"> <h1> IA </h1> </div>
+                    <div class="IA__title__score"> <h2> Score : <span class = "IA__title__score__variable"> 0 </span> </h2> </div>
+                </div>
+                <div class="IA__board">
+                    <div class="IA__board__play">
+                        <div class="IA__board__play__img"> <img src="" alt="" height="400px" width="auto" /> </div>
+                    </div>
+                    <div class="IA__board__select">
+                        <div class="IA__board__select__rock"> <img src="images/Rock.png" alt="Rock" height="150px"/>
+                        </div>
+                        <div class="IA__board__select__paper"> <img src="images/Paper.png" alt="Paper" height="150px" />
+                        </div>
+                        <div class="IA__board__select__scissors"> <img src="images/Scissors.png" alt="Scissors" height="150px" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer-rps">
+            <div class="result">
+                <div class="result__text"> <h3> <span class="result__text__variable"> </span> WINS ! </h3> </div>
+                <input class="result__button" type="button" value="Reset scores" />
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

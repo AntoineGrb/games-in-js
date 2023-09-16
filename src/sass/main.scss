@@ -1,18 +1,17 @@
 @import "./utils/mediasQueries";
-
-//Variables
-
+@import "./utils/variables";
+@import "./pages/rock-paper-scissors";
+@import "./pages/yam";
 
 // General
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: whitesmoke;
 }
 
 //Home
-.container {
+.container-home {
     max-width: 70vw;
     height: 100vh;
     margin: auto;
@@ -21,7 +20,7 @@
     justify-content: space-around;
 }
 
-a {
+.game__link {
     text-decoration: none;
     color: inherit;
     display: block; // Cela fera en sorte que les liens prennent toute la largeur disponible
@@ -62,4 +61,3 @@ a {
         padding: .5rem 1rem;
     }
 }
-

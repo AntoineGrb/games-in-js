@@ -1,0 +1,162 @@
+//Rock Paper Scissors
+
+.container-rps {
+    background-image: url('../Images/Tapis2.jpg');
+    background-repeat: repeat;
+    background-color:$color_main;
+    height: 100vh;
+
+    p {
+        color: $color_main;
+    }
+    
+    h1 {
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $color_main;
+        text-decoration: underline;
+        font-size: 2em;
+        margin:0;
+    
+    }
+    
+    h2 {
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $color_main;
+        font-size: 1.5em;
+        margin-top: 20px;
+    
+    }
+    
+    h3 {
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $color_main;
+        font-weight: bold;
+        font-size: 2em;
+        margin:0;
+    }
+}
+
+.header-rps {
+    padding: 10px;
+    margin-bottom: 15px ;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    button {
+        padding: 10px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.main-rps {
+    display: flex;
+    justify-content: space-between;
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        border-right:solid $color_main;
+        width: 50%;
+        height: 90%;
+        
+            &__title { /* Le bloc titre de l'utilisateur */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        
+            &__board {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        
+                &__select {
+                    &__rock {
+                        
+                        clip-path: circle();
+                    }
+                    &__paper {
+        
+                        clip-path: circle();
+                    }
+                    &__scissors {
+        
+                        clip-path: circle();
+                    }
+                }
+        
+                &__play {
+                    margin-right: 150px;
+                }
+        
+            }
+        }
+        
+        .IA {
+            display: flex;
+            flex-direction: column;
+            border-right:solid;
+            width: 50%; 
+        
+            &__title { /* Le bloc titre de l'IA */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        
+            &__board {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        
+                &__select {
+                    &__rock {
+                        clip-path: circle();
+                    }
+        
+                    &__paper {
+                        clip-path: circle();
+                    }
+        
+                    &__scissors {
+                        clip-path: circle();
+                    }
+        
+                    img {filter:grayscale(100%);}
+                }
+        
+                &__play {
+                    margin-left: 150px;
+                }
+            }
+        }
+}
+
+.footer-rps {
+    display: flex;
+    justify-content: center;
+    margin:0;
+    // visibility: hidden;
+
+    & .result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display:none;
+
+        &__text {
+            border:solid $color_main;
+            padding: 5px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+    }
+}
