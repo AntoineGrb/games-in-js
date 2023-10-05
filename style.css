@@ -179,6 +179,35 @@
   margin-bottom: 10px;
 }
 
+.title__snake {
+  margin-bottom: 50px;
+}
+
+#container {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+canvas {
+  background-color: lightblue;
+  display: block;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
+
+#score {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#highScoreDisplay {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
 /*------------ CONTENU PRINCIPAL ------------- */
 .container-yam {
   background-image: url("../../images/Tapis2.jpg");
