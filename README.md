@@ -28,7 +28,8 @@ Mais c'était un des premiers scripts "complexes" que j'ai fait et j'ai adoré !
 Le jeu est jouable en 1 contre 1, je n'ai pas eu le temps de coder une IA pour l'ordinateur.
 
 ### Snake
-Projet à venir
+Quelques mois plus tard je complète cette série de 3 jeux simples en JS par un Snake. Je me suis pas mal pris la tête avec le script pour prévoir les déplacements du serpent, l'apparition des pommes et la détection des collisions, mais je suis plutôt content du résultat final !
+De nouveau, je n'ai pas pris le temps de faire une mise en forme poussée et pour le téléphone, mais le résultat est jouable et c'est l'essentiel.
 
 ## Technologies utilisées 🛠️
 
