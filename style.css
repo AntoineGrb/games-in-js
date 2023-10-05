@@ -38,8 +38,8 @@
   background-image: url("../images/yam-1.jpg");
   background-position-y: 30%;
 }
-.game--ttt {
-  background-image: url("../images/ttt-2.jpg");
+.game--snake {
+  background-image: url("../images/snake.jpg");
   background-position-y: 50%;
 }
 .game__title {
